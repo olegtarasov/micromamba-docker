@@ -15,7 +15,7 @@ jobs:
       with:
         submodules: recursive
 
-    - uses: olegtarasov/get-tag@v2
+    - uses: olegtarasov/get-tag@v2.1
 
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v1
