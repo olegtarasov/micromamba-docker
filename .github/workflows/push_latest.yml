@@ -26,5 +26,5 @@ jobs:
 
     - name: Build and push image
       run: |
-        docker build . -t docker.pkg.github.com/olegtarasov/micromamba-docker/micromamba:$GIT_TAG_NAME -t docker.pkg.github.com/olegtarasov/micromamba-docker/micromamba:latest
-        docker push docker.pkg.github.com/olegtarasov/micromamba-docker/micromamba:latest
+        docker build . -t ghcr.io/olegtarasov/micromamba:$GIT_TAG_NAME -t ghcr.io/olegtarasov/micromamba:latest
+        docker push ghcr.io/olegtarasov/micromamba:latest

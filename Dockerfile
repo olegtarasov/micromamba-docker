@@ -14,6 +14,7 @@ RUN curl -L https://micromamba.snakepit.net/api/micromamba/linux-64/$VERSION | \
     tar -xj -C /tmp bin/micromamba
 
 FROM $BASE_IMAGE
+LABEL org.opencontainers.image.source=https://github.com/olegtarasov/micromamba-docker
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV MAMBA_ROOT_PREFIX=/opt/conda
 
